@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Websiteformat.css">
+        <title>
+            Monthly Challenge
+        </title>
+        <script type="text/javascript" src="funcs.js"></script>
+    </head>
+    <body>
+        <ul class="menu">
+            <li class="menu"><a href="index.html"><button class="menu"><img class="menu" src="/challengepages/photos/home.png"></button></a></li>
+            <li class="menu"><a href="loginpage.php"><button class="menu"><img class="menu" src="/challengepages/photos/login.png"></button></a></li>
+            <li class="menu"><a href="Addpage.html"><button class="menu"><img class="menu" src="/challengepages/photos/Addpage.png"></button></a></li>
+        </ul>
+        <div>
+            <h1>This page will store all my monthly challenges</h1>
+            <div class="challenge">
+                <img src="/challengepages/photos/challenge1.png" class="challenge">
+                <div>
+                    <a href="/challengepages/Challenge_1.php" class="challenge">Making the website</a>
+                    <br>
+                    <p class="challenge">Here I made the website that stores all the monthly challenges and I describe how I developed the website</p>
+                </div>
+            </div>
+<!--indicator-->
+        </div>
+        <div id="cookies" class="cookie-start cookie-transition cookie-fadein">
+            <div>
+                <p class="cookie-text">
+                    Cookies
+                </p>
+            </div>
+            <div>
+                <p class="cookie-text">
+                    Accept all:
+                </p>
+            </div>
+            <div class="cookie-holder">
+                <div class="slider-holder">
+                    <button id="slider" onClick="sliderActive()" class="cookie-text slider"></button>
+                </div>
+            </div>
+            <div class="submit-holder">
+                <button onClick="submit()" class="submit-button cookie-text">
+                    Submit
+                </button>
+            </div>
+        </div>
+        <script>
+            if (getCookie("cookies-accepted") != "") {
+                document.getElementById("cookies").remove();
+            }
+        </script>
+    </body>
+</html>

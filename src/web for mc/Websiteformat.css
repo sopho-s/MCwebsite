@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    background-color: #d1d1d1;
+    font-family: Courier New;
+    font-size: 100%;
+}
+.user {
+    margin-left: 5px;
+}
+img.menu {
+    width: 40px;
+    height: 40px;
+    padding: 8px 8px;
+}
+li.menu {
+    padding: 0px 0px;
+    float: left;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#999999;
+}
+button.menu {
+    border: hidden;
+    background-color: #999999;
+    padding: 2px 2px;
+}
+button.menu:hover {
+    background-color: #cccccc;
+    border: 2px solid black;
+    padding: 0px 0px;
+}
+div.blog {
+    margin: 20px 60px;
+    border-style: outset;
+    border-width: 4px;
+    background-color: #ffffff;
+}
+div.blog-edit {
+    padding-right:5px;
+}
+div {
+    margin: 0px 10px;
+}
+li {
+    padding: 5px 0px;
+}
+img.blog {
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+}
+div.src {
+    left: 0;
+    position: fixed;
+    right: 0;
+    margin: 0px 0px;
+    background-color: #000000;
+    bottom: 0;
+}
+a.src {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+}
+div.versions {
+    margin: 5px 10px;
+}
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+div.challenge {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 60px;
+    border-style: outset;
+    border-width: 4px;
+    background-color: #ffffff;
+    height: 300px;
+    width: 90%;
+}
+img.challenge {
+    width: 500px;
+    height: 280px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+a.challenge {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 28pt;
+}
+p.challenge {
+    margin-left: 10px;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+form.upload {
+    margin-left: 10px;
+}
+input.upload {
+    margin-top: 5px;
+}
+.cookie-start {
+    padding: 0px 0px;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    height: 100px;
+    bottom: 0px;
+    border: hidden;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+.cookie-fadein {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: cookie-transition;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.cookie-holder {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cookie-text {
+    font-family: Courier New;
+    font-size: 24pt;
+    margin-left: 10px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.slider {
+    margin-left: 2px;
+    height: 30px;
+    width: 30px;
+    margin-top: 2px;
+    background-color: #04AA6D;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    animation-fill-mode: forwards;
+}
+
+.slider:hover {
+    background-color: #4daf8b;
+}
+
+.slider:active {
+    background-color: #04AA6D;
+}
+
+.slider-holder {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 64px;
+    background-color: #999;
+    outline: none;
+    margin-left: 0;
+    border-radius: 15px;
+}
+
+.slider-active {
+    animation-name: slider-active-transition;
+    animation-duration: 1s;
+}
+
+.slider-inactive {
+    animation-name: slider-inactive-transition;
+    animation-duration: 1s;
+}
+
+.submit-holder {
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.submit-button {
+    height: 50px;
+    width: 140px;
+    background-color: #4daf8b;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.submit-button:hover {
+    background-color: #04AA6D;
+}
+
+.submit-button:active {
+    background-color: #4daf8b;
+}
+
+.cookie-shut {
+    animation-fill-mode: forwards;
+    animation-name: shut-cookies;
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+}
+
+@keyframes cookie-transition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slider-active-transition {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(30px);
+    }
+}
+
+@keyframes slider-inactive-transition {
+    from {
+        transform: translateX(30px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes shut-cookies {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100px);
+    }
+}
