@@ -38,6 +38,8 @@
                 ?>
                 </tr>
             </table>
+            <br>
+            <a href="https://github.com/sopho-s/MCwebsite"><h1>Github</h1></a>
         </div>
         <div id="cookies" class="cookie-start cookie-transition cookie-fadein">
             <div>
